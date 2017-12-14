@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1;">
+<title>Sweetbot.design</title>
+<meta name="description" content="A jquery light weight image slideshow plugin. Full width and fully responsive simple image slider with fade in and fade out effect.">
+<meta name="keywords" content="jquery slideshow, full width slideshow, simple slideshow, simple image slider, responsive slider, full width responsive slider">
+<meta name="robots" content="index, follow">
+<meta name="copyright" content="Samir Das">
+<meta name="language" content="EN">
+<link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="src/skdslider.min.js"></script>
+<script src="src/skdslider.js"></script>
+<link href="src/skdslider.css" rel="stylesheet" type="text/css">
+
+<link href="styles/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+		jQuery(document).ready(function(){
+			jQuery('#demo1').skdslider({delay:1500, animationSpeed: 2000,showNextPrev:true,showPlayButton:true,autoSlide:true,animationType:'fading'});
+			jQuery('#demo2').skdslider({delay:1500, animationSpeed: 1000,showNextPrev:true,showPlayButton:false,autoSlide:true,animationType:'sliding'});
+			jQuery('#demo3').skdslider({delay:1500, animationSpeed: 2000,showNextPrev:true,showPlayButton:true,autoSlide:true,animationType:'fading'});
+			
+			jQuery('#responsive').change(function(){
+			  $('#responsive_wrapper').width(jQuery(this).val());
+			  $(window).trigger('resize');
+			});
+			
+		});
+</script>
+</head>
+	
+	
+	
+<body>
+
+<div>
+<div class="sweetbot-background"><a href="#" target="_self"><img class="sweetbot-logo" src="images/sweetbot_logo.png" alt="sweetbotdesign"></a></div>
+<nav id="stickynav">
+	
+		<ul>
+		<li><a href="#" target="_self">FORSIDE</a></li>
+		<li><a href="info.html" target="_self">INFO</a></li>
+		<li><a href="book.html" target="_self">BOOK</a></li>
+	
+	</ul>
+</nav>
+</div>
+
+<section class="section-index">
+
+<div><header><h1>Sweetbot.design</h1></header></div>
+
+<div class="skdslider">
+    <ul id="demo1" class="slides">
+<li>
+<img class="img" src="images/webdesign.jpg" alt="webdesign"/>
+<!--Slider Description example-->
+ <div class="slide-desc">
+  </div>
+</li>
+<li><img class="img" src="images/webdesign_01.jpg" alt="webdesign_01"/>
+   <div class="slide-desc">
+  </div>
+</li>
+<li><img class="img" src="images/webdesign_02.jpg" alt="webdesign_02" />
+<!--NO Description Here-->
+</li>
+<li><img class="img" src="images/webdesign_03.jpg" alt="webdesign_03"/>
+  <div class="slide-desc">
+		
+  </div>
+</li>
+
+</ul>
+</div>
+	
+
+
+
+<div class="hotbot">
+
+ <a href="hotbot.html" target="_blank"><img class="hotbot-logo" src="images/hotbot_logo.png" alt="hotbot-logo"></a> 
+		<div><p  class="pdf-file">Vores styleguide til Hotbot findes her <a href="images/hotbot-styleguide.pdf">Hotbot styleguide</a></p>
+</div>
+	 </div>
+
+</section>
+	
+<div><footer class="site-footer">
+<img class="footer_image" src="images/footer.jpg" alt="footer">
+
+</footer>
+</div>
+
+
+</body>
+</html>
